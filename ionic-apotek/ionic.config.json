@@ -1,0 +1,7 @@
+{
+  "name": "risman-uts-ipat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

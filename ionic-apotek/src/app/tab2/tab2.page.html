@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar id="apa">
+    <ion-title position="center">
+        APOTEK EDMR
+    </ion-title>
+    <ion-icon slot="start" name="arrow-back-outline"  [routerLink]="['/home']"></ion-icon> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="medium">
+    <ion-toolbar>
+      <ion-title size="medium">Data Supplier</ion-title>
+    </ion-toolbar>
+
+    <ion-card>        
+      <ion-card-content>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead class="table mb-0"> 
+              <tr>
+                <th>No</th>
+                  <th>IDSP</th>
+                  <th>Nama</th>
+                  <th>Alamat</th>
+                  <th>Kota</th>
+                  <th>Telepon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let supplier of GETSupplier; let i=index;">
+                <td>{{i+1}}</td>
+                <td>{{supplier.id}}</td>
+                <td>{{supplier.nama}}</td>
+                <td>{{supplier.alamat}}</td>
+                <td>{{supplier.kota}}</td>
+                <td>{{supplier.telp}}</td>
+              </tr>
+            </tbody>
+          </table>    
+        </div>        
+      </ion-card-content>
+    </ion-card> 
+</ion-content>

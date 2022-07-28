@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "risman-uts-ipat",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

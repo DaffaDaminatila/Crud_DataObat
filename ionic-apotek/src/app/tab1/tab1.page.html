@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar id="apa">
+      <ion-title position="center">
+          APOTEK EDMR
+      </ion-title>
+
+      <ion-icon slot="start" name="arrow-back-outline"  [routerLink]="['/home']"></ion-icon> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="medium">
+
+  <ion-toolbar>
+    <ion-title size="medium">Data Obat</ion-title>
+  </ion-toolbar>  
+
+  <ion-card>        
+    <ion-card-content>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead class="table mb-0"> 
+            <tr>
+              <th>No</th>
+                <th>IDSP</th>
+                <th>Kode Obat</th>
+                <th>Nama Obat</th>
+                <th>Produsen</th>
+                <th>Stok</th>
+                <th>Harga (Rp)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let obat of GETObat; let i=index;">
+              <td>{{i+1}}</td>
+              <td>{{obat.supplier_id}}</td>
+              <td>{{obat.kode}}</td>
+              <td>{{obat.nama_obat}}</td>
+              <td>{{obat.produsen}}</td>
+              <td>{{obat.stok}}</td>
+              <td>{{obat.harga}}</td>
+            </tr>
+          </tbody>
+        </table>    
+      </div>        
+    </ion-card-content>
+  </ion-card> 
+</ion-content>

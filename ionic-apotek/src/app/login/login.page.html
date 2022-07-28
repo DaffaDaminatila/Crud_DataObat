@@ -1,0 +1,31 @@
+<ion-header>
+ 
+</ion-header>
+
+<ion-content fullscreen="true" class="ion-padding">
+  <div>
+    <center><img src="assets/edmr.png"></center>
+  </div>
+ 
+    <ion-item class="wrap-input">
+      <ion-input [(ngModel)]="username" type="text" placeholder="Username"></ion-input>
+    </ion-item>
+  
+    <ion-item class="wrap-input">
+      <ion-input [(ngModel)]="password" type="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+    <div class="container-form-btn">
+      <button (click)="_GetDataAdmin()" class="form-btn custom-font"><b>LOGIN</b></button>
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar color="green">
+    <div style="color: black;">
+      <center>
+        Copyright &copy; APOTEK EDMR 2022
+      </center>  
+    </div>
+  </ion-toolbar>
+</ion-footer>

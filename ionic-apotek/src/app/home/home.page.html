@@ -1,0 +1,55 @@
+<ion-header class="ion-no-border">
+  <ion-item lines="none">
+    <ion-icon name="home" slot="start"></ion-icon>
+      <ion-label>
+        <p><b>Beranda</b></p>
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-button  color="medium" routerLink="/login" class="bordered" fill="solid">Logout
+        </ion-button>
+      </ion-buttons>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-img src="../../assets/edmr-card.png"></ion-img>
+    </ion-card-content> 
+  </ion-card> 
+
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size="6">
+        <ion-card routerLink="/tab1" color="light">
+          <ion-card-header><img src="../../assets/obat1.png"></ion-card-header>
+          <ion-card-title class="ion-margin-bottom"><strong>Data Obat</strong></ion-card-title>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="/tab2" color="light">
+          <ion-card-header><img src="../../assets/supl.png"></ion-card-header>
+          <ion-card-title class="ion-margin-bottom"><strong>Data Supplier</strong></ion-card-title>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="/tab3" color="light">
+          <ion-card-header><img src="../../assets/trans2.png"></ion-card-header>
+          <ion-card-title class="ion-margin-bottom"><strong>Data Transaksi</strong></ion-card-title>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="/tab4" color="light">
+          <ion-card-header><img src="../../assets/team.png"></ion-card-header>
+          <ion-card-title class="ion-margin-bottom"><strong>Data Admin</strong></ion-card-title>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar id="apa">
+    <ion-title position="center">
+        APOTEK EDMR
+    </ion-title>
+    <ion-icon slot="start" name="arrow-back-outline"  [routerLink]="['/home']"></ion-icon> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="medium">
+  <ion-toolbar>
+    <ion-title size="medium">Data Transaksi</ion-title>
+  </ion-toolbar>
+
+  <ion-card>        
+    <ion-card-content>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead class="table mb-0"> 
+            <tr>
+              <th>No</th>
+                <th>ID</th>
+                <th>Tanggal</th>
+                <th>Pembeli</th>
+                <th>Admin</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let transaksi of GETTransaksi; let i=index;">
+              <td>{{i+1}}</td>
+              <td>{{transaksi.id}}</td>
+              <td>{{transaksi.tgl}}</td>
+              <td>{{transaksi.nama_pembeli}}</td>
+              <td>{{transaksi.admin_id}}</td>
+            </tr>
+          </tbody>
+        </table>    
+      </div>        
+    </ion-card-content>
+  </ion-card> 
+</ion-content>
